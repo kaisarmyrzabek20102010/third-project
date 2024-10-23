@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  padding: 0;
+}
+
+.romb {
+  background-color: #00ffb7;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+}
+
+.romb:hover {
+  animation: romb 2s;
+  animation-iteration-count: infinite;
+  background-color: #15ff00;
+  transition: 0.9s;
+}
+
+@keyframes romb {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  0% {
+    transform: scale(1);
+  }
+
+ 
+  50% {
+    transform: rotate(90deg);
+  }
+
+ 50% {
+    transform: scale(1);
+  }
+
+  
+
+  100% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.circle {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 360px;
+  animation: cub 5s;
+  margin: 100px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cub {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(300px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.loading {
+  width: 100px;
+  height: 100px;
+  animation: load 3s;
+  margin: 100px;
+  margin-top: 10px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: scale(5deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.car {
+  width: 300px;
+  margin-top: 300px;
+  transform: rotateY(180deg);
+  animation: drive 5s;
+  animation-iteration-count: 1;
+}
